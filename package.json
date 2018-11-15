@@ -1,0 +1,26 @@
+{
+  "name": "dns-zone-rainbow-table",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "eth-ens-namehash": "^2.0.8",
+    "js-sha3": "^0.8.0",
+    "moment": "^2.22.2",
+    "moment-duration-format": "^2.2.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "scripts": {
+    "build": "babel index.js -d dist",
+    "start": "npm run build && node dist/index.js"
+  }
+}
